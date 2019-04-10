@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Admin Panel</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="adminStyle.css">
+    <link rel="stylesheet" type="text/css" href="cssFiles/tableStyle.css">
+    <!-- Product ad -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="cssFiles/homepageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Header-->
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header bg-secoundary mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <a class="navbar-brand active text-white" href="adminPanel.php">Home </a>
+          <a class="navbar-brand active text-white" href="profilePage.php">Profile </a>
+          <!-- Navbar entry list -->
+        <div class="demo-avatar-dropdown">
+          <button id="dbtn" class="mdl-button bg-secoundary text-white" type="text" data-toggle="dropdown">Cost Entry
+            <span class="caret"></span>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom mdl-js-menu mdl-js-ripple-effect" for="dbtn">
+            <li class="mdl-menu__item bg-secoundary"><a href="riceCostEntry.php">Rice Cost</a></li>
+            <li class="mdl-menu__item bg-secoundary"><a href="transportCostEntry.php">Transport Cost</a></li>
+            <li class="mdl-menu__item bg-secoundary"><a href="workerCostEntry.php">Worker Cost</a></li>
+            <li class="mdl-menu__item bg-secoundary"><a href="foodCostEntry.php">Food Cost</a></li>
+            <li class="mdl-menu__item bg-secoundary"><a href="equipmentCostEntry.php">Equipment Cost</a></li>
+            <li class="mdl-menu__item bg-secoundary"><a href="otherCostEntry.php">Other Cost</a></li>
+          </ul>
+        </div>
+        <div class="demo-avatar-dropdown">
+          <button id="cbtn" class="mdl-button bg-secoundary text-white" type="text" data-toggle="dropdown">Profit Entry
+            <span class="caret"></span>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom mdl-js-menu mdl-js-ripple-effect" for="cbtn">
+            <li class="mdl-menu__item bg-secoundary"><a href="riceSellProfitEntry.php">Rice Sell Profit</a></li>
+            <li class="mdl-menu__item bg-secoundary"><a href="otherProfitEntry.php">Other Sell Profit</a></li>
+          </ul>
+        </div>
+          <div class="mdl-layout-spacer"></div>
+          <button class="btn btn-danger text-white">Log Out</button>
+        </div>
+      </header> 
+      <!-- Right Bar-->
+      <div class="demo-drawer mdl-layout__drawer bg-success mdl-color-text--blue-grey-50" id="rightBar">
+        <header class="demo-drawer-header">
+          <img src="https://image.ibb.co/mGn5np/user.jpg" class="demo-avatar" style="border-radius: 100%;">
+          <div class="demo-avatar-dropdown">
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon bg-secondary" style="float: right; overflow: hidden;">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+            <span style="overflow: hidden; float: right; margin-right: 5px; font-size: 115%;">Name of the User</span>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect bg-success" for="accbtn">
+              <li class="mdl-menu__item">Profile</li>
+              <li class="mdl-menu__item">Log out</li>
+            </ul>
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="monthlyReport.php">Monthly Report</a>
+          <a class="mdl-navigation__link" href="productAd.php">Product Ad</a>
+          <a class="mdl-navigation__link" href="managerHistory.php">Personal History</a>
+          <a class="mdl-navigation__link" href="customerList.php">Customer List</a>
+          <a class="mdl-navigation__link" href="individualCustomer.php">Individual Customer</a>
+          <a class="mdl-navigation__link" href="sellerList.php">Seller List</a>
+          <a class="mdl-navigation__link" href="workerList.php">Worker List</a>
+          <a class="mdl-navigation__link" href="riceSellProfit.php">Rice Sell Profit</a>
+          <a class="mdl-navigation__link" href="otherProfit.php">Other Profit</a>
+          <a class="mdl-navigation__link" href="buyRiceCost.php">Buy Rice Cost</a>
+          <a class="mdl-navigation__link" href="workerCost.php">Worker Cost</a>
+          <a class="mdl-navigation__link" href="transportCost.php">Transport Cost</a>
+          <a class="mdl-navigation__link" href="foodCost.php">Food Cost</a>
+          <a class="mdl-navigation__link" href="equipmentCost.php">Equipment Cost</a>
+          <a class="mdl-navigation__link" href="otherCost.php">Other Cost</a>
+          <a class="mdl-navigation__link" href="customerMessage.php">Customer Message</a>
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a><br>
+        </nav>
+      </div>

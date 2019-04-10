@@ -1,0 +1,106 @@
+#table{
+	margin-top: 10px;
+	margin-left: 160px;
+	width: 80%;
+}
+th{
+	background-color: #4d94ff;
+	padding: 5px;
+	text-align: center;
+	font-size: 120%;
+}
+td{
+	padding: 3px;
+	text-align: center;
+}
+#input{
+	margin-left: 260px;
+	width: 30%;
+	margin-top: 20px;
+}
+
+#profile{
+	margin-top: 50px;
+	margin-left: 460px;
+	width: 50%;
+}
+
+/*profile image*/
+.place {
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+	box-shadow: 0 2px 2px black;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#p_pic{
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+#pic_frame{ 
+    margin-top: 5px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    transition: all .3s ease;
+    text-decoration: none;
+    border: 2px solid gray;
+	box-shadow: 0 2px 2px black;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#pro-pic{
+	height: 155px;
+	width: 155px;
+	overflow: hidden;
+}
+
+#file{
+	margin-bottom: 5px;
+	margin-left: 460px;
+}
+#result{
+	margin-top: 30px;
+	margin-left: 260px;
+	width: 20%;
+	font-family: sans-serif;
+	font-size: 150%;
+	color: red;
+}
+
+#search{
+	margin-left: 260px;
+	width: 35%;
+	margin-top: 20px;
+	float: right;
+}
+
+#entryHeader{
+	padding: 8px;
+	font-size: 150%;
+	font-family: sans-serif;
+}
+#subEntryHeader{
+	padding: 3px;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+#field{
+	padding: 5px;
+	border-radius: 4px;
+	background-color: #ddccff;
+}

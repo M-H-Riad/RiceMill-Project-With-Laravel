@@ -1,0 +1,16 @@
+#bar{
+	margin-left: 15px;
+	overflow: hidden;
+}
+.demo-avatar{
+	border-radius: 100%;
+}
+#pic{
+	border-radius: 100%;
+}
+#table{
+	overflow: hidden;
+	margin-left: 200px;
+	width: 70%;
+	margin-top: 20px;
+}
